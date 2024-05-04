@@ -1,0 +1,68 @@
+/** @project_name : Masky-Md
+   * @author : Masky bot info 
+   * @youtube : https://www.youtube.com/@Maskybot01
+   * @description : Masky-Md ,A Multi-functional whatsapp user bot.
+   * @version 2.5.0
+*
+* 
+   * Created By Masky Tech Info.
+   * © 2024 Masky-Md.
+⛥┌┤
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Fork And Edit AS You Wish //
+
+const { smd, Config,smdBuffer,  prefix } = require('../lib')
+
+
+var surl = 'youtube.com/@Maskybot01' // Source URL
+const number = '2348067333855'
+var name = ' Masky Bot'
+var body = '𝑇𝛩𝑈𝐶𝛨 𝛨𝛯𝑅𝛯'
+var image = 'https://telegra.ph/file/54efddccf41281ad7ec51.jpg'
+let text = `╭═══ ━ ━ ━ ━ • ━ ━ ━ ━ ══<>>>>
+│       「 𝗠𝗬 𝗜𝗡𝗧𝗥𝗢 」
+│ Name      : Masky Bot
+│ Place       : Africa/Nigeria
+│ Gender    :  Male
+│ Age          : 20
+│ Phone     : wa.me/2348067333855
+│ Youtube   : youtube.com/@Maskybot01
+| Repo    :  https://github.com/Masky01bot/Masky_Bot.git
+│ Status     : Web Dev, App Dev, Software Dev.
+╰═══ ━ ━ ━ ━ • ━ ━ ━ ━ ══<>>>>`
+
+
+
+ //---------------------------------------------------------------------------
+ smd({
+             pattern: "intro",
+             desc: "Show intro of user",
+             category: "fun",
+             filename: __filename,
+             use: '<group link.>',
+         },
+         async(message) => {
+    try{
+          let media ;try{ media = await smdBuffer(image) }catch{media = log0}
+           const q =await message.bot.fakeMessage("contact",{},name) 
+           let contextInfo = {...(await message.bot.contextInfo(name,body,media,1,surl, 2) )}
+           await message.send(text, {contextInfo : contextInfo },"Masky",  q )
+    }catch(e){ await message.error(`${e}\n\ncommand: intro`,e,false)}
+
+
+ })
