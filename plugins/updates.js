@@ -1,13 +1,12 @@
 /**
- *    * @author : Masky bot info 
+   * @author : Masky bot info 
    * @youtube : https://www.youtube.com/@Maskybot01
    * @description : Masky-Md ,A Multi-functional whatsapp user bot.
    * @version 2.5.0
-*
-* 
+   *
+   * 
    * Created By Masky Tech Info.
    * © 2024 Masky-Md.
-⛥┌┤
  */
 
 
